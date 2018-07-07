@@ -1,11 +1,10 @@
-#FizzBuzz
+#zundoko
+import random
 
-for i in range(1, 100):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
-    elif i % 3 == 0:
-        print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
-    else:
-        print(i)
+MESSAGE = 'ズンズンズンズンドコ'
+
+list = []
+while ''.join(list[-5:]) != MESSAGE:
+    list.append(random.choice(['ズン', 'ドコ']))
+    print(list[-1])
+print('キ・ヨ・シ！')
